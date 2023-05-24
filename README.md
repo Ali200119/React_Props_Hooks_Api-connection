@@ -1,1 +1,1 @@
-# React_Props_Hooks_Api-connection
+Homework for Thursday (25.05.2023)
