@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Product from '../components/common/Product'
 import {Button} from "reactstrap"
-import { useState } from 'react';
 
 function Home() {
   const products = ["iPhone, Nokia, Samsung, Sony"];
@@ -13,17 +12,17 @@ function Home() {
   //   num++;
   // }
 
-  const[num, setNum] = useState(1);
+  // const[num, setNum] = useState(1);
 
-  const increment = () => {
-    setNum(num + 1);
-  }
+  // const increment = () => {
+  //   setNum(num + 1);
+  // }
 
-  const decrement = () => {
-    if(num > 0) {
-      setNum(num - 1);
-    }
-  }
+  // const decrement = () => {
+  //   if(num > 0) {
+  //     setNum(num - 1);
+  //   }
+  // }
 
   return (
     <main>
@@ -41,10 +40,10 @@ function Home() {
             }
           </div>
 
-          <h1>{num}</h1>
+          {/* <h1>{num}</h1> */}
 
-          <Button onClick={increment}>Increase</Button>
-          <Button onClick={decrement}>Decrease</Button>
+          {/* <Button onClick={increment}>Increase</Button> */}
+          {/* <Button onClick={decrement}>Decrease</Button> */}
         </div>
       </section>
     </main>
