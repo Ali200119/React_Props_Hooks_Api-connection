@@ -13,10 +13,16 @@ function Home() {
   //   num++;
   // }
 
-  const[num, setNum] = useState(3);
+  const[num, setNum] = useState(1);
 
-  const add = () => {
-    setNum(num + 1)
+  const increment = () => {
+    setNum(num + 1);
+  }
+
+  const decrement = () => {
+    if(num > 0) {
+      setNum(num - 1);
+    }
   }
 
   return (
@@ -37,7 +43,8 @@ function Home() {
 
           <h1>{num}</h1>
 
-          <Button onClick={add}>Create</Button>
+          <Button onClick={increment}>Increase</Button>
+          <Button onClick={decrement}>Decrease</Button>
         </div>
       </section>
     </main>
