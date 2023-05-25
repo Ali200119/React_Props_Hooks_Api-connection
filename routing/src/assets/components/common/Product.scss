@@ -1,0 +1,16 @@
+main {
+    #product {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+
+        .container {
+            width: 75%;
+
+            .products {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
